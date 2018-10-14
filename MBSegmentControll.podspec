@@ -9,34 +9,26 @@
 Pod::Spec.new do |s|
   s.name             = 'MBSegmentControll'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MBSegmentControll.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  #s.swift_version    = '4.2'
+  s.summary          = 'A fully customizable SegmentControll with right to left support.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        Customizable SegmentControll for ios. This library support image and text for segment title placeholder. Also if you want to have support for Right_to_Left languages this library have fully supports that future as well.
                        DESC
 
   s.homepage         = 'https://github.com/Arashk-A/MBSegmentControll'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Arashk-A' => 'm.birang@gmail.com' }
-  s.source           = { :git => 'https://github.com/Arashk-A/MBSegmentControll.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'm.birang' => 'm.birang@gmail.com' }
+  s.source           = { :git => 'https://github.com/Arashk-A/MBSegmentControll.git', :tag => s.version }
+  s.social_media_url = 'https://twitter.com/mbirang'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'MBSegmentControll/Classes/**/*'
+  s.ios.deployment_target = '9.0'
+  s.platform         = :ios
   
-  # s.resource_bundles = {
-  #   'MBSegmentControll' => ['MBSegmentControll/Assets/*.png']
-  # }
+  s.source_files     = 'MBSegmentControll/Classes/**/*'
+  s.requires_arc     = true
+  s.framework        = 'UIKit'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

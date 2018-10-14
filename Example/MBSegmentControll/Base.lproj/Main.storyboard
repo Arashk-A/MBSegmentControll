@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +20,167 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIX-A4-LbO" customClass="MBSegmentControll" customModule="MBSegmentControll">
+                                <rect key="frame" x="0.0" y="110" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uHN-q9-gGW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfItems">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectItemAtIndex">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLine" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="imageSegmentTaped:" destination="vXZ-lx-hvc" eventType="valueChanged" id="B5I-aJ-zjm"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBi-U1-UHu" customClass="MBSegmentControll" customModule="MBSegmentControll">
+                                <rect key="frame" x="0.0" y="180" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.16078431372549018" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DH2-Vx-PqW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfItems">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectItemAtIndex">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titles" value="Fisrt, Second, Third"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segmentTapped:" destination="vXZ-lx-hvc" eventType="valueChanged" id="hbm-tl-UKk"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="4TU-0W-CT6" customClass="MBSegmentControll" customModule="MBSegmentControll">
+                                <rect key="frame" x="0.0" y="320" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.43137254901960786" green="0.0" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="s4g-bl-gvn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfItems">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.77254901960784317" green="0.57647058823529407" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectItemAtIndex">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbViewHeight">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titles" value="یک , دو , سه"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVi-sM-hpX" customClass="MBSegmentControll" customModule="MBSegmentControll">
+                                <rect key="frame" x="0.0" y="250" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZZD-nW-emN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfItems">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectItemAtIndex">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbViewHeight">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titles" value="One, Two, Three, Four"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="0iV-Jd-T0Y" customClass="MBSegmentControll" customModule="MBSegmentControll">
+                                <rect key="frame" x="0.0" y="390" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WJj-K0-IFb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfItems">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.43137254901960786" green="0.0" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectItemAtIndex">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="0.7725490196" green="0.57647058819999997" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titles" value="خانه , گالری, پیام‌ها"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZBi-U1-UHu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3ae-Se-Hse"/>
+                            <constraint firstItem="iIX-A4-LbO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3qM-EB-PtS"/>
+                            <constraint firstItem="0iV-Jd-T0Y" firstAttribute="top" secondItem="4TU-0W-CT6" secondAttribute="bottom" constant="20" id="5g1-lS-LnW"/>
+                            <constraint firstAttribute="trailing" secondItem="0iV-Jd-T0Y" secondAttribute="trailing" id="9Hf-JQ-kzw"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBi-U1-UHu" secondAttribute="trailing" id="9KH-zn-ngK"/>
+                            <constraint firstAttribute="trailing" secondItem="iIX-A4-LbO" secondAttribute="trailing" id="MaM-Io-c1Z"/>
+                            <constraint firstItem="eVi-sM-hpX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RLY-t0-ZrG"/>
+                            <constraint firstItem="0iV-Jd-T0Y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Yq8-WE-rOz"/>
+                            <constraint firstAttribute="trailing" secondItem="4TU-0W-CT6" secondAttribute="trailing" id="bk2-5k-uxB"/>
+                            <constraint firstAttribute="trailing" secondItem="eVi-sM-hpX" secondAttribute="trailing" id="esW-O1-UpA"/>
+                            <constraint firstItem="4TU-0W-CT6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="g0C-rH-gjT"/>
+                            <constraint firstItem="ZBi-U1-UHu" firstAttribute="top" secondItem="iIX-A4-LbO" secondAttribute="bottom" constant="20" id="jom-CR-i8d"/>
+                            <constraint firstItem="eVi-sM-hpX" firstAttribute="top" secondItem="ZBi-U1-UHu" secondAttribute="bottom" constant="20" id="tSL-Ld-shV"/>
+                            <constraint firstItem="iIX-A4-LbO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="90" id="vSL-8G-cmb"/>
+                            <constraint firstItem="4TU-0W-CT6" firstAttribute="top" secondItem="eVi-sM-hpX" secondAttribute="bottom" constant="20" id="wIl-1Y-zHS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageSegment" destination="iIX-A4-LbO" id="ptT-xD-phE"/>
+                        <outlet property="rightToLeftsegment" destination="0iV-Jd-T0Y" id="E1E-ta-8yu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,22 @@
+{
+  "name": "MBSegmentControll",
+  "version": "0.1.0",
+  "summary": "A short description of MBSegmentControll.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Arashk-A/MBSegmentControll",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Arashk-A": "m.birang@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Arashk-A/MBSegmentControll.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MBSegmentControll/Classes/**/*"
+}

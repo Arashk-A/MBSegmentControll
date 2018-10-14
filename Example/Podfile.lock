@@ -1,0 +1,16 @@
+PODS:
+  - MBSegmentControll (0.1.0)
+
+DEPENDENCIES:
+  - MBSegmentControll (from `../`)
+
+EXTERNAL SOURCES:
+  MBSegmentControll:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBSegmentControll: 4cf275e92fd655f0e47b1c9ad6f69ccee47d3f9b
+
+PODFILE CHECKSUM: a3bb2c9de423f8ff131f4699cb3fe54aaaa2a6b4
+
+COCOAPODS: 1.5.3
