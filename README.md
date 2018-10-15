@@ -1,6 +1,6 @@
 # MBSegmentControll
 
-[![](https://img.shields.io/travis/Arashk-A/MBSegmentControll.svg?style=flat)](https://travis-ci.org/Arashk-A/MBSegmentControll)
+![](https://img.shields.io/badge/Swift-4.0-green.svg?style=flat)
 [![Version](https://img.shields.io/cocoapods/v/MBSegmentControll.svg?style=flat)](https://cocoapods.org/pods/MBSegmentControll)
 [![License](https://img.shields.io/cocoapods/l/MBSegmentControll.svg?style=flat)](https://cocoapods.org/pods/MBSegmentControll)
 [![Platform](https://img.shields.io/cocoapods/p/MBSegmentControll.svg?style=flat)](https://cocoapods.org/pods/MBSegmentControll)
@@ -15,7 +15,7 @@ A fully customizable SegmentControll with right to left support
 - Supporting image and tetx for items
 - Designable into Interface Builder
 
-![sample](MBSegmentControll/Assets/sample.gif)
+![sample](https://i.imgur.com/Wkz9Ezm.gif)
 
 ## Example
 
@@ -99,7 +99,7 @@ Add a UIView and set it's class to MBSegmentControll. You can customize the cont
 
 This is fully Customizable over Interface Builder exept font and images that Interface Builder currently dose not support
 
-![](MBSegmentControll/Assets/Interface_Builder.png)
+![](https://i.imgur.com/8FYxhrc.png)
 
 - Manually
 
